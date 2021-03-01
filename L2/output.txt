@@ -440,12 +440,12 @@ test1:x:1777:
 test2:x:1002:
 End.
  
-Last password change					            : Dec 31, 2021
-Password expires					                : Jan 01, 2023
-Password inactive					                : never
-Account expires						                : never
-Minimum number of days between password change		: 0
-Maximum number of days between password change		: 366
+Last password change					                         : Dec 31, 2021
+Password expires					                             : Jan 01, 2023
+Password inactive					                            : never
+Account expires						                             : never
+Minimum number of days between password change		  : 0
+Maximum number of days between password change		  : 366
 Number of days of warning before password expires	: 7
 File "/etc/shadow". Begin:
 root:*:14871::::::
