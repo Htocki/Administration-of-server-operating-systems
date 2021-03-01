@@ -1,2 +1,2 @@
-Файл script.bash запускается в терминале командой sudo script.bash.
+Файл script.bash запускается в терминале командой sudo bash script.bash.
 Файл output.txt содержит результат работы сценария.
