@@ -1,0 +1,627 @@
+File "/etc/shadow". Begin:
+root:*:14871::::::
+nobody:!*:18630::::::
+dbus:!*:18630::::::
+bin:!*:18630::::::
+daemon:!*:18630::::::
+mail:!*:18630::::::
+ftp:!*:18630::::::
+http:!*:18630::::::
+systemd-journal-remote:!*:18630::::::
+systemd-network:!*:18630::::::
+systemd-resolve:!*:18630::::::
+systemd-timesync:!*:18630::::::
+systemd-coredump:!*:18630::::::
+uuidd:!*:18630::::::
+dhcpcd:!*:18630::::::
+dnsmasq:!*:18630::::::
+rpc:!*:18630::::::
+avahi:!*:18630::::::
+colord:!*:18630::::::
+cups:!*:18630::::::
+flatpak:!*:18630::::::
+gdm:!*:18630::::::
+geoclue:!*:18630::::::
+git:!*:18630::::::
+gnome-initial-setup:!*:18630::::::
+nm-openconnect:!*:18630::::::
+nm-openvpn:!*:18630::::::
+ntp:!*:18630::::::
+openvpn:!*:18630::::::
+polkitd:!*:18630::::::
+rtkit:!*:18630::::::
+tss:!*:18630::::::
+usbmux:!*:18630::::::
+htocki:$6$dOuR7XCD5fLezcxn$9UFPMH2H9OROS5xGv7OvzNQwitsHNB6N9d4a22.0/NDzT.0fUa/opHpxg1Yjf2Mw9CVpnmBpntP2RlvYlm5KV1:18647:0:99999:7:::
+End.
+ 
+File "/etc/group". Begin:
+root:x:0:root
+adm:x:999:daemon
+wheel:x:998:htocki
+kmem:x:997:
+tty:x:5:
+utmp:x:996:
+audio:x:995:
+disk:x:994:
+input:x:993:
+kvm:x:992:
+lp:x:991:cups
+optical:x:990:
+render:x:989:
+storage:x:988:
+uucp:x:987:
+video:x:986:
+users:x:985:
+sys:x:3:bin
+mem:x:8:
+ftp:x:11:
+mail:x:12:
+log:x:19:
+smmsp:x:25:
+proc:x:26:polkitd
+games:x:50:
+lock:x:54:
+network:x:90:
+floppy:x:94:
+scanner:x:96:
+power:x:98:
+systemd-journal:x:984:
+rfkill:x:983:
+nobody:x:65534:
+dbus:x:81:
+bin:x:1:daemon
+daemon:x:2:bin
+http:x:33:
+systemd-journal-remote:x:982:
+systemd-network:x:981:
+systemd-resolve:x:980:
+systemd-timesync:x:979:
+systemd-coredump:x:978:
+uuidd:x:68:
+dhcpcd:x:977:
+dnsmasq:x:976:
+rpc:x:32:
+gdm:x:120:
+ntp:x:87:
+avahi:x:975:
+colord:x:974:
+cups:x:209:
+flatpak:x:973:
+geoclue:x:972:
+git:x:971:
+gnome-initial-setup:x:970:
+nm-openconnect:x:969:
+nm-openvpn:x:968:
+openvpn:x:967:
+polkitd:x:102:
+rtkit:x:133:
+tss:x:966:
+usbmux:x:140:
+htocki:x:1000:
+End.
+ 
+File "/etc/passwd". Begin:
+root:x:0:0::/root:/bin/bash
+nobody:x:65534:65534:Nobody:/:/usr/bin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
+bin:x:1:1::/:/usr/bin/nologin
+daemon:x:2:2::/:/usr/bin/nologin
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+http:x:33:33::/srv/http:/usr/bin/nologin
+systemd-journal-remote:x:982:982:systemd Journal Remote:/:/usr/bin/nologin
+systemd-network:x:981:981:systemd Network Management:/:/usr/bin/nologin
+systemd-resolve:x:980:980:systemd Resolver:/:/usr/bin/nologin
+systemd-timesync:x:979:979:systemd Time Synchronization:/:/usr/bin/nologin
+systemd-coredump:x:978:978:systemd Core Dumper:/:/usr/bin/nologin
+uuidd:x:68:68::/:/usr/bin/nologin
+dhcpcd:x:977:977:dhcpcd privilege separation:/:/usr/bin/nologin
+dnsmasq:x:976:976:dnsmasq daemon:/:/usr/bin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/usr/bin/nologin
+avahi:x:975:975:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
+colord:x:974:974:Color management daemon:/var/lib/colord:/usr/bin/nologin
+cups:x:209:209:cups helper user:/:/usr/bin/nologin
+flatpak:x:973:973:Flatpak system helper:/:/usr/bin/nologin
+gdm:x:120:120:Gnome Display Manager:/var/lib/gdm:/usr/bin/nologin
+geoclue:x:972:972:Geoinformation service:/var/lib/geoclue:/usr/bin/nologin
+git:x:971:971:git daemon user:/:/usr/bin/git-shell
+gnome-initial-setup:x:970:970:GNOME Initial Setup:/run/gnome-initial-setup:/usr/bin/nologin
+nm-openconnect:x:969:969:NetworkManager OpenConnect:/:/usr/bin/nologin
+nm-openvpn:x:968:968:NetworkManager OpenVPN:/:/usr/bin/nologin
+ntp:x:87:87:Network Time Protocol:/var/lib/ntp:/bin/false
+openvpn:x:967:967:OpenVPN:/:/usr/bin/nologin
+polkitd:x:102:102:PolicyKit daemon:/:/usr/bin/nologin
+rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
+tss:x:966:966:tss user for tpm2:/:/usr/bin/nologin
+usbmux:x:140:140:usbmux user:/:/usr/bin/nologin
+htocki:x:1000:1000:htocki:/home/htocki:/bin/zsh
+End.
+ 
+groupadd: group 'users' already exists
+uid=1777(test1) gid=1777(test1) groups=1777(test1),985(users),12(mail)
+ 
+File "/etc/passwd". Begin:
+root:x:0:0::/root:/bin/bash
+nobody:x:65534:65534:Nobody:/:/usr/bin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
+bin:x:1:1::/:/usr/bin/nologin
+daemon:x:2:2::/:/usr/bin/nologin
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+http:x:33:33::/srv/http:/usr/bin/nologin
+systemd-journal-remote:x:982:982:systemd Journal Remote:/:/usr/bin/nologin
+systemd-network:x:981:981:systemd Network Management:/:/usr/bin/nologin
+systemd-resolve:x:980:980:systemd Resolver:/:/usr/bin/nologin
+systemd-timesync:x:979:979:systemd Time Synchronization:/:/usr/bin/nologin
+systemd-coredump:x:978:978:systemd Core Dumper:/:/usr/bin/nologin
+uuidd:x:68:68::/:/usr/bin/nologin
+dhcpcd:x:977:977:dhcpcd privilege separation:/:/usr/bin/nologin
+dnsmasq:x:976:976:dnsmasq daemon:/:/usr/bin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/usr/bin/nologin
+avahi:x:975:975:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
+colord:x:974:974:Color management daemon:/var/lib/colord:/usr/bin/nologin
+cups:x:209:209:cups helper user:/:/usr/bin/nologin
+flatpak:x:973:973:Flatpak system helper:/:/usr/bin/nologin
+gdm:x:120:120:Gnome Display Manager:/var/lib/gdm:/usr/bin/nologin
+geoclue:x:972:972:Geoinformation service:/var/lib/geoclue:/usr/bin/nologin
+git:x:971:971:git daemon user:/:/usr/bin/git-shell
+gnome-initial-setup:x:970:970:GNOME Initial Setup:/run/gnome-initial-setup:/usr/bin/nologin
+nm-openconnect:x:969:969:NetworkManager OpenConnect:/:/usr/bin/nologin
+nm-openvpn:x:968:968:NetworkManager OpenVPN:/:/usr/bin/nologin
+ntp:x:87:87:Network Time Protocol:/var/lib/ntp:/bin/false
+openvpn:x:967:967:OpenVPN:/:/usr/bin/nologin
+polkitd:x:102:102:PolicyKit daemon:/:/usr/bin/nologin
+rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
+tss:x:966:966:tss user for tpm2:/:/usr/bin/nologin
+usbmux:x:140:140:usbmux user:/:/usr/bin/nologin
+htocki:x:1000:1000:htocki:/home/htocki:/bin/zsh
+test1:x:1777:1777::/home/nouser:/bin/zsh
+End.
+ 
+uid=1001(test1) gid=1777(test1) groups=1777(test1),985(users),12(mail)
+ 
+File "/etc/passwd". Begin:
+root:x:0:0::/root:/bin/bash
+nobody:x:65534:65534:Nobody:/:/usr/bin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
+bin:x:1:1::/:/usr/bin/nologin
+daemon:x:2:2::/:/usr/bin/nologin
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+http:x:33:33::/srv/http:/usr/bin/nologin
+systemd-journal-remote:x:982:982:systemd Journal Remote:/:/usr/bin/nologin
+systemd-network:x:981:981:systemd Network Management:/:/usr/bin/nologin
+systemd-resolve:x:980:980:systemd Resolver:/:/usr/bin/nologin
+systemd-timesync:x:979:979:systemd Time Synchronization:/:/usr/bin/nologin
+systemd-coredump:x:978:978:systemd Core Dumper:/:/usr/bin/nologin
+uuidd:x:68:68::/:/usr/bin/nologin
+dhcpcd:x:977:977:dhcpcd privilege separation:/:/usr/bin/nologin
+dnsmasq:x:976:976:dnsmasq daemon:/:/usr/bin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/usr/bin/nologin
+avahi:x:975:975:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
+colord:x:974:974:Color management daemon:/var/lib/colord:/usr/bin/nologin
+cups:x:209:209:cups helper user:/:/usr/bin/nologin
+flatpak:x:973:973:Flatpak system helper:/:/usr/bin/nologin
+gdm:x:120:120:Gnome Display Manager:/var/lib/gdm:/usr/bin/nologin
+geoclue:x:972:972:Geoinformation service:/var/lib/geoclue:/usr/bin/nologin
+git:x:971:971:git daemon user:/:/usr/bin/git-shell
+gnome-initial-setup:x:970:970:GNOME Initial Setup:/run/gnome-initial-setup:/usr/bin/nologin
+nm-openconnect:x:969:969:NetworkManager OpenConnect:/:/usr/bin/nologin
+nm-openvpn:x:968:968:NetworkManager OpenVPN:/:/usr/bin/nologin
+ntp:x:87:87:Network Time Protocol:/var/lib/ntp:/bin/false
+openvpn:x:967:967:OpenVPN:/:/usr/bin/nologin
+polkitd:x:102:102:PolicyKit daemon:/:/usr/bin/nologin
+rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
+tss:x:966:966:tss user for tpm2:/:/usr/bin/nologin
+usbmux:x:140:140:usbmux user:/:/usr/bin/nologin
+htocki:x:1000:1000:htocki:/home/htocki:/bin/zsh
+test1:x:1001:1777::/home/nouser:/bin/zsh
+End.
+ 
+File "/etc/shadow". Begin:
+root:*:14871::::::
+nobody:!*:18630::::::
+dbus:!*:18630::::::
+bin:!*:18630::::::
+daemon:!*:18630::::::
+mail:!*:18630::::::
+ftp:!*:18630::::::
+http:!*:18630::::::
+systemd-journal-remote:!*:18630::::::
+systemd-network:!*:18630::::::
+systemd-resolve:!*:18630::::::
+systemd-timesync:!*:18630::::::
+systemd-coredump:!*:18630::::::
+uuidd:!*:18630::::::
+dhcpcd:!*:18630::::::
+dnsmasq:!*:18630::::::
+rpc:!*:18630::::::
+avahi:!*:18630::::::
+colord:!*:18630::::::
+cups:!*:18630::::::
+flatpak:!*:18630::::::
+gdm:!*:18630::::::
+geoclue:!*:18630::::::
+git:!*:18630::::::
+gnome-initial-setup:!*:18630::::::
+nm-openconnect:!*:18630::::::
+nm-openvpn:!*:18630::::::
+ntp:!*:18630::::::
+openvpn:!*:18630::::::
+polkitd:!*:18630::::::
+rtkit:!*:18630::::::
+tss:!*:18630::::::
+usbmux:!*:18630::::::
+htocki:$6$dOuR7XCD5fLezcxn$9UFPMH2H9OROS5xGv7OvzNQwitsHNB6N9d4a22.0/NDzT.0fUa/opHpxg1Yjf2Mw9CVpnmBpntP2RlvYlm5KV1:18647:0:99999:7:::
+test1:!:18687:0:99999:7:::
+End.
+ 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+File "/etc/shadow". Begin:
+root:*:14871::::::
+nobody:!*:18630::::::
+dbus:!*:18630::::::
+bin:!*:18630::::::
+daemon:!*:18630::::::
+mail:!*:18630::::::
+ftp:!*:18630::::::
+http:!*:18630::::::
+systemd-journal-remote:!*:18630::::::
+systemd-network:!*:18630::::::
+systemd-resolve:!*:18630::::::
+systemd-timesync:!*:18630::::::
+systemd-coredump:!*:18630::::::
+uuidd:!*:18630::::::
+dhcpcd:!*:18630::::::
+dnsmasq:!*:18630::::::
+rpc:!*:18630::::::
+avahi:!*:18630::::::
+colord:!*:18630::::::
+cups:!*:18630::::::
+flatpak:!*:18630::::::
+gdm:!*:18630::::::
+geoclue:!*:18630::::::
+git:!*:18630::::::
+gnome-initial-setup:!*:18630::::::
+nm-openconnect:!*:18630::::::
+nm-openvpn:!*:18630::::::
+ntp:!*:18630::::::
+openvpn:!*:18630::::::
+polkitd:!*:18630::::::
+rtkit:!*:18630::::::
+tss:!*:18630::::::
+usbmux:!*:18630::::::
+htocki:$6$dOuR7XCD5fLezcxn$9UFPMH2H9OROS5xGv7OvzNQwitsHNB6N9d4a22.0/NDzT.0fUa/opHpxg1Yjf2Mw9CVpnmBpntP2RlvYlm5KV1:18647:0:99999:7:::
+test1:$6$oNs5umYmIXVkvEYM$Og4Cv76gUinLcbrHmuUtwbuSIQZ8V8C8vVjxzM7OD926y/02Y2AKGjWKQQafv72mJW5rRUGAqYxBGuosUVRUN0:18687:0:99999:7:::
+End.
+ 
+uid=1002(test2) gid=1002(test2) groups=1002(test2)
+ 
+htocki	nouser
+ 
+File "/etc/group". Begin:
+root:x:0:root
+adm:x:999:daemon
+wheel:x:998:htocki
+kmem:x:997:
+tty:x:5:
+utmp:x:996:
+audio:x:995:
+disk:x:994:
+input:x:993:
+kvm:x:992:
+lp:x:991:cups
+optical:x:990:
+render:x:989:
+storage:x:988:
+uucp:x:987:
+video:x:986:
+users:x:985:test1
+sys:x:3:bin
+mem:x:8:
+ftp:x:11:
+mail:x:12:test1
+log:x:19:
+smmsp:x:25:
+proc:x:26:polkitd
+games:x:50:
+lock:x:54:
+network:x:90:
+floppy:x:94:
+scanner:x:96:
+power:x:98:
+systemd-journal:x:984:
+rfkill:x:983:
+nobody:x:65534:
+dbus:x:81:
+bin:x:1:daemon
+daemon:x:2:bin
+http:x:33:
+systemd-journal-remote:x:982:
+systemd-network:x:981:
+systemd-resolve:x:980:
+systemd-timesync:x:979:
+systemd-coredump:x:978:
+uuidd:x:68:
+dhcpcd:x:977:
+dnsmasq:x:976:
+rpc:x:32:
+gdm:x:120:
+ntp:x:87:
+avahi:x:975:
+colord:x:974:
+cups:x:209:
+flatpak:x:973:
+geoclue:x:972:
+git:x:971:
+gnome-initial-setup:x:970:
+nm-openconnect:x:969:
+nm-openvpn:x:968:
+openvpn:x:967:
+polkitd:x:102:
+rtkit:x:133:
+tss:x:966:
+usbmux:x:140:
+htocki:x:1000:
+test1:x:1777:
+test2:x:1002:
+End.
+ 
+userdel: test3 mail spool (/var/spool/mail/test3) not found
+userdel: test3 home directory (/home/test2) not found
+File "/etc/group". Begin:
+root:x:0:root
+adm:x:999:daemon
+wheel:x:998:htocki
+kmem:x:997:
+tty:x:5:
+utmp:x:996:
+audio:x:995:
+disk:x:994:
+input:x:993:
+kvm:x:992:
+lp:x:991:cups
+optical:x:990:
+render:x:989:
+storage:x:988:
+uucp:x:987:
+video:x:986:
+users:x:985:test1
+sys:x:3:bin
+mem:x:8:
+ftp:x:11:
+mail:x:12:test1
+log:x:19:
+smmsp:x:25:
+proc:x:26:polkitd
+games:x:50:
+lock:x:54:
+network:x:90:
+floppy:x:94:
+scanner:x:96:
+power:x:98:
+systemd-journal:x:984:
+rfkill:x:983:
+nobody:x:65534:
+dbus:x:81:
+bin:x:1:daemon
+daemon:x:2:bin
+http:x:33:
+systemd-journal-remote:x:982:
+systemd-network:x:981:
+systemd-resolve:x:980:
+systemd-timesync:x:979:
+systemd-coredump:x:978:
+uuidd:x:68:
+dhcpcd:x:977:
+dnsmasq:x:976:
+rpc:x:32:
+gdm:x:120:
+ntp:x:87:
+avahi:x:975:
+colord:x:974:
+cups:x:209:
+flatpak:x:973:
+geoclue:x:972:
+git:x:971:
+gnome-initial-setup:x:970:
+nm-openconnect:x:969:
+nm-openvpn:x:968:
+openvpn:x:967:
+polkitd:x:102:
+rtkit:x:133:
+tss:x:966:
+usbmux:x:140:
+htocki:x:1000:
+test1:x:1777:
+test2:x:1002:
+End.
+ 
+Last password change					            : Dec 31, 2021
+Password expires					                : Jan 01, 2023
+Password inactive					                : never
+Account expires						                : never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 366
+Number of days of warning before password expires	: 7
+File "/etc/shadow". Begin:
+root:*:14871::::::
+nobody:!*:18630::::::
+dbus:!*:18630::::::
+bin:!*:18630::::::
+daemon:!*:18630::::::
+mail:!*:18630::::::
+ftp:!*:18630::::::
+http:!*:18630::::::
+systemd-journal-remote:!*:18630::::::
+systemd-network:!*:18630::::::
+systemd-resolve:!*:18630::::::
+systemd-timesync:!*:18630::::::
+systemd-coredump:!*:18630::::::
+uuidd:!*:18630::::::
+dhcpcd:!*:18630::::::
+dnsmasq:!*:18630::::::
+rpc:!*:18630::::::
+avahi:!*:18630::::::
+colord:!*:18630::::::
+cups:!*:18630::::::
+flatpak:!*:18630::::::
+gdm:!*:18630::::::
+geoclue:!*:18630::::::
+git:!*:18630::::::
+gnome-initial-setup:!*:18630::::::
+nm-openconnect:!*:18630::::::
+nm-openvpn:!*:18630::::::
+ntp:!*:18630::::::
+openvpn:!*:18630::::::
+polkitd:!*:18630::::::
+rtkit:!*:18630::::::
+tss:!*:18630::::::
+usbmux:!*:18630::::::
+htocki:$6$dOuR7XCD5fLezcxn$9UFPMH2H9OROS5xGv7OvzNQwitsHNB6N9d4a22.0/NDzT.0fUa/opHpxg1Yjf2Mw9CVpnmBpntP2RlvYlm5KV1:18647:0:99999:7:::
+test1:!$6$oNs5umYmIXVkvEYM$Og4Cv76gUinLcbrHmuUtwbuSIQZ8V8C8vVjxzM7OD926y/02Y2AKGjWKQQafv72mJW5rRUGAqYxBGuosUVRUN0:18992:0:366:7:::
+End.
+ 
+File "/etc/group". Begin:
+root:x:0:root
+adm:x:999:daemon
+wheel:x:998:htocki
+kmem:x:997:
+tty:x:5:
+utmp:x:996:
+audio:x:995:
+disk:x:994:
+input:x:993:
+kvm:x:992:
+lp:x:991:cups
+optical:x:990:
+render:x:989:
+storage:x:988:
+uucp:x:987:
+video:x:986:
+users:x:985:test1
+sys:x:3:bin
+mem:x:8:
+ftp:x:11:
+mail:x:12:test1
+log:x:19:
+smmsp:x:25:
+proc:x:26:polkitd
+games:x:50:
+lock:x:54:
+network:x:90:
+floppy:x:94:
+scanner:x:96:
+power:x:98:
+systemd-journal:x:984:
+rfkill:x:983:
+nobody:x:65534:
+dbus:x:81:
+bin:x:1:daemon
+daemon:x:2:bin
+http:x:33:
+systemd-journal-remote:x:982:
+systemd-network:x:981:
+systemd-resolve:x:980:
+systemd-timesync:x:979:
+systemd-coredump:x:978:
+uuidd:x:68:
+dhcpcd:x:977:
+dnsmasq:x:976:
+rpc:x:32:
+gdm:x:120:
+ntp:x:87:
+avahi:x:975:
+colord:x:974:
+cups:x:209:
+flatpak:x:973:
+geoclue:x:972:
+git:x:971:
+gnome-initial-setup:x:970:
+nm-openconnect:x:969:
+nm-openvpn:x:968:
+openvpn:x:967:
+polkitd:x:102:
+rtkit:x:133:
+tss:x:966:
+usbmux:x:140:
+htocki:x:1000:
+test1:x:1777:
+test2:x:1002:
+xusers:x:1010:root
+End.
+ 
+File "/etc/group". Begin:
+root:x:0:root
+adm:x:999:daemon
+wheel:x:998:htocki
+kmem:x:997:
+tty:x:5:
+utmp:x:996:
+audio:x:995:
+disk:x:994:
+input:x:993:
+kvm:x:992:
+lp:x:991:cups
+optical:x:990:
+render:x:989:
+storage:x:988:
+uucp:x:987:
+video:x:986:
+users:x:985:test1
+sys:x:3:bin
+mem:x:8:
+ftp:x:11:
+mail:x:12:test1
+log:x:19:
+smmsp:x:25:
+proc:x:26:polkitd
+games:x:50:
+lock:x:54:
+network:x:90:
+floppy:x:94:
+scanner:x:96:
+power:x:98:
+systemd-journal:x:984:
+rfkill:x:983:
+nobody:x:65534:
+dbus:x:81:
+bin:x:1:daemon
+daemon:x:2:bin
+http:x:33:
+systemd-journal-remote:x:982:
+systemd-network:x:981:
+systemd-resolve:x:980:
+systemd-timesync:x:979:
+systemd-coredump:x:978:
+uuidd:x:68:
+dhcpcd:x:977:
+dnsmasq:x:976:
+rpc:x:32:
+gdm:x:120:
+ntp:x:87:
+avahi:x:975:
+colord:x:974:
+cups:x:209:
+flatpak:x:973:
+geoclue:x:972:
+git:x:971:
+gnome-initial-setup:x:970:
+nm-openconnect:x:969:
+nm-openvpn:x:968:
+openvpn:x:967:
+polkitd:x:102:
+rtkit:x:133:
+tss:x:966:
+usbmux:x:140:
+htocki:x:1000:
+test1:x:1777:
+test2:x:1002:
+yusers:x:1010:root
+End.
+ 
+Removing user root from group yusers
+userdel: test1 mail spool (/var/spool/mail/test1) not found
